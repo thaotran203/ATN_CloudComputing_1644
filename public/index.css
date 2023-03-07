@@ -1,0 +1,189 @@
+.create {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.colActions {
+    min-width: 200px;
+}
+
+.count {
+    margin-bottom: 20px;
+}
+
+.create a i {
+    margin-right: 5px;
+}
+
+.colActions a i {
+    color: white;
+    margin-right: 5px;
+}
+
+.colActions a {
+    color: #ffffff
+}
+
+.colActions a:hover {
+    color: #ffffff;
+}
+
+thead {
+    text-align: center;
+    background-color: tomato;
+    color: #ffffff;
+}
+
+
+tr {
+    width: 100%;
+    display: inline-table;
+    table-layout: fixed;
+}
+
+td {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+th.price {
+    width: 200px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+td.price {
+    width: 200px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+td.colActions {
+    width: 200px;
+}
+
+th.colActions {
+    width: 200px;
+}
+
+th.number {
+    width: 50px;
+    white-space: pre;
+    text-align: center;
+}
+
+td.number {
+    width: 50px;
+    white-space: pre;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+tbody {
+    display: block;
+    height: 600px;
+    overflow: auto;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table {
+    width:400px;
+}
+
+table {
+    border-collapse: collapse;
+}
+  
+@media
+    only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+    
+    tr:nth-child(odd) {
+        background: #ccc;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td.colActions {
+        width: 100%;
+    }
+
+    th.colActions {
+        width: 100%;
+    }
+
+    td.number {
+        width: 100%;
+    }
+
+    th.number {
+        width: 100%;
+    }
+
+    th.price {
+        width: 100%;
+        overflow: hidden;
+        word-break: break-all;
+    }
+    
+    td.price {
+        width: 100%;
+        overflow: hidden;
+        word-break: break-all;
+    }
+}
+
