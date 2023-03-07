@@ -3,9 +3,12 @@ const bodyParser = require('body-parser');
 const hbs = require('hbs');
 require('dotenv').config();
 
-const productRouter = require('./routers/Product.route');
-
+//khoi dong app
 const app = express();
+
+// import route
+const productRouter = require('./routers/Product.route');
+app.use('/', productRouter);
 
 app.set('view engine', 'hbs');
 app.set('views', './views');
@@ -18,7 +21,6 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('/', productRouter);
 app.use((req, res) => {
     res.status(404).send('<h1>This is ATN Toy Store</h1>');
 });

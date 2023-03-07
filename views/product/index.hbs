@@ -53,7 +53,7 @@
 
                         <thead role="rowgroup">
                             <tr role="row">
-                                <th role="columnheader">#</th>
+                                <th role="columnheader">No.</th>
                                 <th role="columnheader">Name</th>
                                 <th role="columnheader" class="price">Price</th>
                                 <th role="columnheader">Color</th>
@@ -71,7 +71,7 @@
                                     <td role="cell" class="price">{{ product_price }}</td>
                                     <td role="cell">{{ product_color }}</td>
                                     <td role="cell">{{ product_des }}</td>
-                                    <td role="cell"><img src="{{ product_image }}" width="120px" height="120px"></td>
+                                    <td role="cell"><img src="{{ product_image }}" width="125px" height="120px"></td>
                                     <td class="colActions" role="cell">
                                         <a type="button" class="btn btn-warning" href="do-edit?id={{ _id }}"><i class="fas fa-edit"></i>Edit</a>
                                         <a type="button" class="btn btn-danger" href="delete?id={{ _id }}"><i class="fas fa-trash-alt"></i>Delete</a>
